@@ -19,15 +19,9 @@
             <button onclick="format('V_')">Variável</button>
             <button onclick="format('')">Chave</button>
         </div>
-        <a class="copiar">Copiar</a>
+        <button class="copiar" onclick="copiar()">Copiar</button>
     </div>
+    <div id="alert">Texto copiado!</div>
 </body>
-
-<script>
-    const format = (choice) => {
-        const result = document.getElementById("result");
-        const text = document.querySelector(".desc").value;
-        result.innerHTML = choice + text.toUpperCase().replace(/ /g, "_");
-    }   
-</script>
+<script src="script.js"></script>
 </html> 
