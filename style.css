@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Jet Brains Mono;
+    src: url(font/JetBrainsMono-Regular.ttf);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 40%;
+    min-height: 60%;
+    border-radius: 25px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textresult {
+    font-family: Jet Brains Mono;
+
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 60px;
+    max-height: 50%;
+    overflow: auto;
+    
+    padding: 10px;  
+    margin-bottom: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px .2px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+
+}
+
+#result {
+    word-wrap: break-word;
+}
+
+.desc {
+    width: 100%;
+    padding: 8px 10px;
+    outline:none;
+    border: solid 1px rgb(226, 226, 226);
+    background-color: rgba(241, 241, 241, 0.486);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.desc:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px 3px rgba(102, 175, 233, 0.4);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px 3px rgba(102, 175, 233, 0.4);
+}
+
+.opcoes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px){
+    .opcoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.opcoes button {
+    margin: 4px;
+    padding: 6px 8px;
+    border: solid 1px rgba(226, 226, 226, 0.863);
+    background-color: rgba(241, 241, 241, 0.671);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copiar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(43, 228, 120);
+    outline: none;
+    border: solid 1px rgb(39, 185, 100);
+    cursor:pointer;
+
+    font-weight: bold;
+    color: #FFF;
+}
+
+.copiar:hover {
+    box-shadow: 0 8px 25px rgba(57, 253, 139, 0.425);
+}
+
+#alert {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 12px 28px;
+    background-color: rgba(144, 255, 194, 0.274);
+    border: solid 1px rgb(79, 241, 152);
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(8, 175, 83);
+    display: none
+}
