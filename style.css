@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: rgb(238, 238, 238);
     height: 100vh;
@@ -18,8 +17,8 @@ body {
 
 .card {
     background: #fff;
-    min-width: 40%;
-    height: 60%;
+    width: 40%;
+    min-height: 60%;
     border-radius: 25px;
     padding: 50px;
     display: flex;
@@ -37,9 +36,9 @@ body {
     align-items: center;
     
     width: 100%;
-    min-height: 25%;
+    min-height: 60px;
     max-height: 50%;
-    overflow-y: auto;
+    overflow: auto;
     
     padding: 10px;  
     margin-bottom: 25px;
@@ -97,10 +96,17 @@ body {
     padding: 10px;
     text-align: center;
     border-radius: 8px;
-    background-color: rgb(99, 238, 157);
+    background-color: rgb(43, 228, 120);
     outline: none;
-    border: none;
+    border: solid 1px rgb(39, 185, 100);
     cursor:pointer;
+
+    font-weight: bold;
+    color: #FFF;
+}
+
+.copiar:hover {
+    box-shadow: 0 8px 25px rgba(57, 253, 139, 0.425);
 }
 
 #alert {

@@ -13,10 +13,9 @@ const copiar = () => {
     }
 } 
 
-
 const showAlert = (element) => {
+    element.style.display = 'block';
     setTimeout(() => {
-        element.style.display = 'block';
-    }, 1000);
-    element.style.display = 'none';
+        element.style.display = 'none';
+    }, 5000);
 }
